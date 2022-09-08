@@ -4,8 +4,9 @@
   box-sizing: border-box;
 }
 
+/*１つ目px*/
 .box1 {
-  width: 300px;
+  width: 1380px;
   height: 300px;
   /*好きな色に変更*/
   background-color: #FFFacd;
@@ -20,4 +21,29 @@
   /*好きな色に変更*/
   background-color: #006400;
   border: 5px dotted #FFFacd;
+}
+
+/*２つ目auto*/
+.box3 {
+  width:auto;
+  height: 300px;
+  /*好きな色に変更*/
+  background-color: #FFFacd;
+  /*好きな色に変更*/
+  border: 5px dashed #006400;
+  margin: 30px;
+  padding: 30px;
+}
+
+
+/*３つ目%*/
+.box4 {
+  width: 96%;
+  height: 300px;
+  /*好きな色に変更*/
+  background-color: #FFFacd;
+  /*好きな色に変更*/
+  border: 5px dashed #006400;
+  margin: 30px;
+  padding: 30px;
 }
