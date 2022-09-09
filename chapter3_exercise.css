@@ -4,46 +4,43 @@
   box-sizing: border-box;
 }
 
-/*１つ目px*/
+/*１つ目px→レスポンシブの際に指定が必要*/
 .box1 {
   width: 1380px;
   height: 300px;
-  /*好きな色に変更*/
   background-color: #FFFacd;
-  /*好きな色に変更*/
-  border: 5px dashed #006400;
-  margin: 30px;
-  padding: 30px;
+  border: 2px solid #006400;/*borderより外側の余白 実線*/
+  margin: 30px; /* 値1つは、上下左右 */
+  padding: 25px;/*borderより内側の余白 左上から*/
 }
+
 .box2 {
   width: 100px;
   height: 100px;
-  /*好きな色に変更*/
   background-color: #006400;
-  border: 5px dotted #FFFacd;
+  /*ドット*/
+  border: 3px dotted #FFFacd;
 }
 
-/*２つ目auto*/
+/*２つ目auto→幅に合わせる*/
 .box3 {
   width:auto;
-  height: 300px;
-  /*好きな色に変更*/
+  height: auto;
   background-color: #FFFacd;
-  /*好きな色に変更*/
-  border: 5px dashed #006400;
+  /*二重線 上のみ*/
+  border-top: 5px double #006400;
   margin: 30px;
   padding: 30px;
 }
 
 
-/*３つ目%*/
+/*３つ目%→画面に合わせる*/
 .box4 {
   width: 96%;
-  height: 300px;
-  /*好きな色に変更*/
+  height: 96%;
   background-color: #FFFacd;
-  /*好きな色に変更*/
-  border: 5px dashed #006400;
-  margin: 30px;
+  /*点線*/
+  border: 3px dashed #006400;
+  margin: 10px 20px 10px 20px; /* 値4つは、上 右 下 左 （時計まわり）*/
   padding: 30px;
 }
